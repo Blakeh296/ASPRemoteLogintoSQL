@@ -20,6 +20,7 @@ namespace ASPRemoteQuerySQL
         {
             try
             {
+                GridView1.DataSourceID = String.Empty;
                 string query = TextBox1.Text;
                 // Grab the Connection string from the web.Config file
                 string connString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
